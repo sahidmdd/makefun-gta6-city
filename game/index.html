@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bahia Marisol — an open-world crime story</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0b1117; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  /* Read aloud by a screen reader, never painted: the game's status line. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Bahia Marisol: an open-world crime game. Drive and walk around a city, take cars, outrun the police and finish four jobs."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
